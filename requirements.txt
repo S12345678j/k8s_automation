@@ -1,0 +1,4 @@
+kubernetes
+click
+pyyaml==6.0.1
+
