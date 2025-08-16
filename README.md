@@ -94,7 +94,6 @@ Validates cluster connection and existing resources before proceeding.
 This screenshot shows successful installation of KEDA on the cluster.
 <img width="1920" height="1008" alt="Keda-installation" src="https://github.com/user-attachments/assets/b8fd4bb9-3640-43a6-8d2b-7dbbc86a6345" />
 
-![KEDA Installation](./Screenshots/keda-installation.png)
 ---
 
 ## Deployment Success
@@ -102,7 +101,7 @@ This screenshot shows successful installation of KEDA on the cluster.
  python k8s_automation.py deploy --name myapp --namespace default --image nginx:latest --cpu-request 100m --cpu-limit 200m --memory-request 128Mi --memory-limit 256Mi --port 80 --min-replicas 1 --max-replicas 5 --target-cpu 50
 ```
 Below is the output from the CLI when deploying the application.
-![Deployment Success](./screenshots/deployment-success.png)
+<img width="1895" height="246" alt="deployment-success" src="https://github.com/user-attachments/assets/923e10ef-44d0-47fd-8d74-0c94302568cf" />
 
 ---
 
@@ -111,7 +110,7 @@ Below is the output from the CLI when deploying the application.
  python k8s_automation.py status --name myapp --namespace default
 ```
 Here we check the health status of the deployed application.
-![Health Check](./screenshots/health-check.png)
+<img width="1902" height="167" alt="health-check" src="https://github.com/user-attachments/assets/6680bfe8-1d08-432e-b38a-a5fa531543d8" />
 
 
 ### Get Kubernetes Resource Details
@@ -120,11 +119,12 @@ kubectl get deployments -n default
 kubectl get pods -n default -l app=myapp
 kubectl get hpa -n default
 ```
-![Resouces](./screenshots/resources.png)
+<img width="1559" height="336" alt="resources" src="https://github.com/user-attachments/assets/bd50330c-ad74-4554-ae62-8e46b00e6ebe" />
 
 ###  Check logs of specific pods
 ```bash
  kubectl logs myapp-667ff8d48f-mbks9 -n default
  ```
 
-![Pod Logs](./screenshots/logs.png)
+<img width="1920" height="1008" alt="logs" src="https://github.com/user-attachments/assets/17d0ec54-a521-43c5-b1a6-63ee67ed4e6d" />
+
