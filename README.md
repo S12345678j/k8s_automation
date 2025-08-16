@@ -92,6 +92,8 @@ Validates cluster connection and existing resources before proceeding.
  python k8s_automation.py install-keda
  ```
 This screenshot shows successful installation of KEDA on the cluster.
+<img width="1920" height="1008" alt="Keda-installation" src="https://github.com/user-attachments/assets/b8fd4bb9-3640-43a6-8d2b-7dbbc86a6345" />
+
 ![KEDA Installation](./Screenshots/keda-installation.png)
 ---
 
@@ -124,4 +126,5 @@ kubectl get hpa -n default
 ```bash
  kubectl logs myapp-667ff8d48f-mbks9 -n default
  ```
+
 ![Pod Logs](./screenshots/logs.png)
